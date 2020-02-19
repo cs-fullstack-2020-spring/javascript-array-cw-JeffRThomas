@@ -7,6 +7,7 @@ let theBeatles = ["John", "Paul", "George", "Pete"];
 // Print Pete's name only
 console.log(theBeatles[3]);
 // Remove Pete, and replace with Ringo, then print the list
+// !! : this only works bc Pete is at the end, you can also replace values in an array
 theBeatles.pop();
 theBeatles.push("Ringo");
 console.log(theBeatles);
@@ -28,7 +29,7 @@ console.log(favYearsOfLife);
 let deletedIndex=favYearsOfLife.indexOf(userAge3);
 favYearsOfLife.splice(deletedIndex,1);
 // Changing the Second Element
-favYearsOfLife.unshift('38');
+favYearsOfLife.unshift('38'); // !! : unshift adds an element to the beginning of your array
 console.log(favYearsOfLife);
 
 console.log("*******************Exercise3*********************");
