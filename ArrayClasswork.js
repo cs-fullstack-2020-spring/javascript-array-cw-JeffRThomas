@@ -24,8 +24,11 @@ let userAge4 = prompt("And lastly you would say?");
 // Array Creation and Output Display in Console Log
 let favYearsOfLife = [userAge1,userAge2,userAge3,userAge4];
 console.log(favYearsOfLife);
-let deletedAge = favYearsOfLife.splice(userAge3,1);prompt(`You entered ${userAge3} for your third age, sorry we need to delete that you.`);
-
+// Delete Third Element
+let deletedIndex=favYearsOfLife.indexOf(userAge3);
+favYearsOfLife.splice(deletedIndex,1);
+// Changing the Second Element
+favYearsOfLife.unshift('38');
 console.log(favYearsOfLife);
 
 console.log("*******************Exercise3*********************");
